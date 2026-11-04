@@ -1,0 +1,9 @@
+include LICENSE README.md THIRD_PARTY_NOTICES.md .env.example environment.yml
+recursive-include docs *.md *.json
+recursive-include scripts *.sh
+recursive-include tests *.py
+include vaguebench/data/dataset.json
+recursive-include vaguebench/prompts *.json
+recursive-include vaguebench/envs/eb_alfred/gen/layouts *.npy
+include vaguebench/envs/eb_alfred/LICENSE
+include vaguebench/envs/eb_alfred/models/config/rewards.json

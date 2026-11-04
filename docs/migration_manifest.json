@@ -1,0 +1,701 @@
+{
+  "annotation_source": "EmbodiedBench/v2-merged.json",
+  "annotation_source_sha256": "4c4a0d92a4f6d9054d7052524b71a396ff546d84103b31cfd769259a3c6d5963",
+  "copied_files": [
+    {
+      "source": "LICENSE",
+      "target": "LICENSE",
+      "source_sha256": "80860293a0fee773fc3c2643438a0c65512578395f10f06c2f2d8d21f5aea80e"
+    },
+    {
+      "source": "eb_alfred/LICENSE",
+      "target": "vaguebench/envs/eb_alfred/LICENSE",
+      "source_sha256": "c5d9c78cf00a05feb1b71f589a2d542c510619efe3bef2dbfb156e88b952da36"
+    },
+    {
+      "source": "eb_alfred/EBAlfEnv.py",
+      "target": "vaguebench/envs/eb_alfred/EBAlfEnv.py",
+      "source_sha256": "2c2b24d0e337a7d513476b911d8a628718df91438b11edbba5893b2f4827bfb0"
+    },
+    {
+      "source": "eb_alfred/thor_connector.py",
+      "target": "vaguebench/envs/eb_alfred/thor_connector.py",
+      "source_sha256": "0a1305f1795db910e1f6d7762e42d1962f38a6fc9350c1e0732b0180ea875f26"
+    },
+    {
+      "source": "eb_alfred/utils.py",
+      "target": "vaguebench/envs/eb_alfred/utils.py",
+      "source_sha256": "333241a6516aeda91a9334588a0314eefa7f029e9764824ac2fbfead95103a02"
+    },
+    {
+      "source": "eb_alfred/env/thor_env.py",
+      "target": "vaguebench/envs/eb_alfred/env/thor_env.py",
+      "source_sha256": "d6cee7f34f85d74f2a079d0ec84c7b991a2bf2192ab3c26f1896bb2bcae9bddf"
+    },
+    {
+      "source": "eb_alfred/env/tasks.py",
+      "target": "vaguebench/envs/eb_alfred/env/tasks.py",
+      "source_sha256": "e86ef885c547e35114b28494e19b4e351dc7bbeb4b1d2bd571d302d01ac36cd3"
+    },
+    {
+      "source": "eb_alfred/env/reward.py",
+      "target": "vaguebench/envs/eb_alfred/env/reward.py",
+      "source_sha256": "6cadb9afe1dfc5c6b05d06983960aeb0a68039221b4f90b05058266cfbd294cd"
+    },
+    {
+      "source": "eb_alfred/gen/constants.py",
+      "target": "vaguebench/envs/eb_alfred/gen/constants.py",
+      "source_sha256": "8fb6b92c48bdf383321672e269b1d2e76ded2a966639fe118c1b5d0db04fe98d"
+    },
+    {
+      "source": "eb_alfred/gen/goal_library.py",
+      "target": "vaguebench/envs/eb_alfred/gen/goal_library.py",
+      "source_sha256": "faac3e4d3ac7c8d3355aca16bd945fec4f1c83951cf9ab3ce021d091647d2c57"
+    },
+    {
+      "source": "eb_alfred/gen/graph/graph_obj.py",
+      "target": "vaguebench/envs/eb_alfred/gen/graph/graph_obj.py",
+      "source_sha256": "485e0f4188e5da51c46757ac57548edfdaf5de676ee19a22b6a17a821d7d04fe"
+    },
+    {
+      "source": "eb_alfred/gen/utils/game_util.py",
+      "target": "vaguebench/envs/eb_alfred/gen/utils/game_util.py",
+      "source_sha256": "33fa19735e8bc5c9a8220ceeea2ecaaa242daa55aa13f0b773c290e67fa55640"
+    },
+    {
+      "source": "eb_alfred/gen/utils/image_util.py",
+      "target": "vaguebench/envs/eb_alfred/gen/utils/image_util.py",
+      "source_sha256": "0702f0be36a64ee973f8020f82e8da32f2cb9e6210428dd46032084dad5a47e0"
+    },
+    {
+      "source": "eb_alfred/models/config/rewards.json",
+      "target": "vaguebench/envs/eb_alfred/models/config/rewards.json",
+      "source_sha256": "dd7d833de4da5dba10af24b169da673815979899c62b815d4f49d408517485ea"
+    },
+    {
+      "source": "eb_alfred/scripts/startx.py",
+      "target": "vaguebench/envs/eb_alfred/scripts/startx.py",
+      "source_sha256": "414b91fbb9112f816383d013a21e590135689707c9d2ee6f5d0dbf70540e3a7b"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan1-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan1-layout.npy",
+      "source_sha256": "e852249e1bb59eea9b724c06d4b95afa48629743eb927b68a6c7c2328aa9411c"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan10-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan10-layout.npy",
+      "source_sha256": "d1f24fe1868342cec4d6f595133d4151f3ef11d642868a27aced814c30dd7b59"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan11-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan11-layout.npy",
+      "source_sha256": "37089ffd251cd86f353650cf8a24cc744c1e6f0e42eb5b26fc426e991945e8c8"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan12-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan12-layout.npy",
+      "source_sha256": "5d77b6ac0ace26f9852aa4120ff1bd35e3ec985efe2c017fcc5e0a2834ae78c0"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan13-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan13-layout.npy",
+      "source_sha256": "1e0898e5a199968eb8cc90a7df3532577cbcc47dbe49435bcc4986c8d5f634fc"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan14-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan14-layout.npy",
+      "source_sha256": "0990560a1768a68a93a364beaf45fc616a3c7a1d4882ee1eb3ee3897cc365da3"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan15-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan15-layout.npy",
+      "source_sha256": "a4b49921afc6a800b2006b473fe58410f83f668a617675571a7804fc008fc122"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan16-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan16-layout.npy",
+      "source_sha256": "2491e20da1b552fdcdc657c0e72749498757c2e43b772fb50bc530010fcb5a6e"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan17-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan17-layout.npy",
+      "source_sha256": "dfc83179fa22daf477c7bbf80f1fb0fb427d4c51f8faf5f3a9c00188983bfbee"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan18-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan18-layout.npy",
+      "source_sha256": "0efccebac90ca46211f6c284a83201acde65426b8e8e752b73cd83f534d2c4c2"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan19-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan19-layout.npy",
+      "source_sha256": "83c2531c474eb644eeae55a7e0b7acb5dbdbe9c986933b3a0f05ebd8ccc22e38"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan2-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan2-layout.npy",
+      "source_sha256": "b1e4dbdf281260ec5282de1c8dbfc98890dfa8d403dc4a2931c66690e66ad3e8"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan20-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan20-layout.npy",
+      "source_sha256": "3ce23d6461b5f878bab00c81a9087c800e79d010abddb0ef1f2154953102c33d"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan201-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan201-layout.npy",
+      "source_sha256": "d66b063239812c08cb93f78001d7bbd45159ce3205716c708aad3351bc4cf644"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan202-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan202-layout.npy",
+      "source_sha256": "2ae758197d2af1d5750d3734059bd5d225e90ea331920e13670301f1d0a08a44"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan203-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan203-layout.npy",
+      "source_sha256": "1be9387bc4a5088898b1bc44e94dd77fcc4e1943a21c484a2c8ba2bc119b1b65"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan204-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan204-layout.npy",
+      "source_sha256": "2e02b9eed2adedb135386709c3ec6b84bf25bf3d493b3297616f7f20dc80a8d1"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan205-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan205-layout.npy",
+      "source_sha256": "123c41fec3d2505c2dd5ec03364c3486b607651919090271bf3040320dba24bb"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan206-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan206-layout.npy",
+      "source_sha256": "8e6ae6c703e40d4133d1f7b130960313c7e76439e70fbe74eae45cdd352d2043"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan207-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan207-layout.npy",
+      "source_sha256": "1f07555abbfb329dd465b5f622a35a0d0aca82e489480169ca588f4d3fe20f9a"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan208-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan208-layout.npy",
+      "source_sha256": "371fcf3f7739ee3594ffa4c5640a29ada4635a84fffd7d00471f0876ba7ab5e8"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan209-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan209-layout.npy",
+      "source_sha256": "4265a14fa19e67e0b13333d9e5536eff798bdebcaae21e0aa709c4b2a6da7fb2"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan21-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan21-layout.npy",
+      "source_sha256": "3adb05eeffdf3aa8cbd4fa09a8e496d02a287dd116fbdc5c6a951c0ccd0b8a6a"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan210-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan210-layout.npy",
+      "source_sha256": "4cf06506f32bab51fb3ca659ba44d775f5a70c7253c6b77f73b94dfad32ecc36"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan211-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan211-layout.npy",
+      "source_sha256": "9a568c535e1628f771d8234b30be634407f7e0c6fbc5a1ef84fb91aecafe6741"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan212-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan212-layout.npy",
+      "source_sha256": "5d0c87ef956b635d99695e2e48cebae2055cf86c138864f4ac61e3dfd1dcfdf3"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan213-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan213-layout.npy",
+      "source_sha256": "6c8fd44a3625a2b8203120d4a77499675f402c25114416f9fe2a24fa56adf9e0"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan214-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan214-layout.npy",
+      "source_sha256": "556b244db93e59200d1f35cde28a3567d2cf6e434551a07918e5ad659eb8d54d"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan215-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan215-layout.npy",
+      "source_sha256": "4287e1e13cbed9f3050d11a39b7bc704ed5e0c5bc08d3cae4e46163c178bb8fe"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan216-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan216-layout.npy",
+      "source_sha256": "93f41dd4083e518b97751b30cd184f7a7f7aca1afdd041e20ac8f8bbb0f405d2"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan217-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan217-layout.npy",
+      "source_sha256": "7e1a34ad2c65e4e70a935e941656c0b23ad24c7bd0042182a9f9b74fb3f56802"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan218-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan218-layout.npy",
+      "source_sha256": "c6b50d2f136d5847b95d0d37cd4337af67529133f0d0fb8cc589172f1ceb1af8"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan219-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan219-layout.npy",
+      "source_sha256": "3908507bc2d53805ef50548fc5917a0a881aa6c9cce4f55222fda8b83d4f2ba3"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan22-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan22-layout.npy",
+      "source_sha256": "aba0f2a41dd807422b6bcb710dc1d57d8cbb93f982de48312714a0256b8eaa88"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan220-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan220-layout.npy",
+      "source_sha256": "ecb42bc59f2b69942a459cdd2211c1f158f88848031bd298d17f5edf7c87b9c7"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan221-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan221-layout.npy",
+      "source_sha256": "8128d85ce9fa6f6e6e157967e8a5218c4a1683474bf8641959a96087d3d7bc01"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan222-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan222-layout.npy",
+      "source_sha256": "56a9b79a4a2d6ed2699592525702352c6ab860207453573a732f16e2443484bb"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan223-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan223-layout.npy",
+      "source_sha256": "7054f024fbcd975254000e330fef1300ed1f38463ccb7ce662c8db326030a52a"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan224-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan224-layout.npy",
+      "source_sha256": "d8fd1555e0f245530741fc50fd859f2c643947aced831b707ce9e38794a27dcb"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan225-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan225-layout.npy",
+      "source_sha256": "c213528103af1ca5f575d00cda9956f5f9e38e2bcbdfc7c6fec73f99cbb88eed"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan226-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan226-layout.npy",
+      "source_sha256": "e9996425a6c310106d46b28fa9bc2614030102239a9deff081fd88447a7014d9"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan227-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan227-layout.npy",
+      "source_sha256": "a6769b8cbf392362eb34910f946ebbcec6cb9f225fe1172411f0a75f9bac6843"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan228-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan228-layout.npy",
+      "source_sha256": "e937e04c38b5283d603519991546372d93b0d282de75b1cca2104c0dc7b1724a"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan229-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan229-layout.npy",
+      "source_sha256": "1b7393044df4cdd83bff8fece504d624e3741aeafd23e040fdc8ecd695e30064"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan23-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan23-layout.npy",
+      "source_sha256": "3bf239a78a371fdeff44130238c572df34241e6ec2265bcfe1c8dc5b46c78aae"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan230-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan230-layout.npy",
+      "source_sha256": "bf8c5e28124a534e9668db230f9f097464b021a063576347eac16a4807069511"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan24-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan24-layout.npy",
+      "source_sha256": "cddf9a50f9a96232761835fc4a7ea7b47b16ae7219743e217de6c0bec06b1833"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan25-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan25-layout.npy",
+      "source_sha256": "af635412897abc5be0a6943a94af9ee7f9b0186d603bf20471fb0c2f713986b8"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan26-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan26-layout.npy",
+      "source_sha256": "6ef3f86c4268ff18b63e0e188e33de4c17cecc46b601e5867717ecb466a0b751"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan27-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan27-layout.npy",
+      "source_sha256": "1fdccfe75cc0b97c33ba65a2e3034e68ce146263592a5acba3b57661b1bd7ed9"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan28-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan28-layout.npy",
+      "source_sha256": "3fc0243108995a5d4365fa2959f66c2cd94fd8c9c16096da5abc739a97adf8b8"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan29-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan29-layout.npy",
+      "source_sha256": "0787354130b3da139bf913f758ed783722803f96e1c3ad30b9f9d3354a82bcc7"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan3-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan3-layout.npy",
+      "source_sha256": "399907cafbd2aacad40d5dcecf23aa6b87a641b3f5707aa6171e21a8e4b87542"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan30-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan30-layout.npy",
+      "source_sha256": "906cf1543344bdaa2d6d3d9efa399930981ca5bd6bfaba79d9dd0778bcdc54b1"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan301-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan301-layout.npy",
+      "source_sha256": "081cea39b8dc4311f72cf4fc4a6e453c00d4e8d67bb4834b547ba48f3037a0e9"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan302-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan302-layout.npy",
+      "source_sha256": "a1c5a311a84067c5f6a2c59b2b51fba7905ea8549a888247f7b65e2056126dd4"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan303-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan303-layout.npy",
+      "source_sha256": "6de506e6b814e4f692c25394c7fb891500f060b4881422ef76e327075ff96a1a"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan304-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan304-layout.npy",
+      "source_sha256": "ea626216e33c5fc3827d5421e29afa28d44005eab9320a75bad97656755894f7"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan305-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan305-layout.npy",
+      "source_sha256": "8595e148d56158ea5d517a2155963c7879355499e6a5f16b3d8640dc6da27f34"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan306-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan306-layout.npy",
+      "source_sha256": "f53eb8818df6074beb5131f7f380e49204c1c59bc8393c32b6b0f59eb551ee7b"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan307-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan307-layout.npy",
+      "source_sha256": "4490240b03416a9785fa594aa45f104eb2d01f23992255147fc62de6edc750cc"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan308-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan308-layout.npy",
+      "source_sha256": "1abcb5859166e4f5cd780868210ef5455904f10532a4aa2379f95a868328b231"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan309-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan309-layout.npy",
+      "source_sha256": "e609dd38fc052cebef9a16153bb9e9c679a53e5f97b78833dd320f8c5bfa3085"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan310-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan310-layout.npy",
+      "source_sha256": "41cb5182986cc3aa98c66078e93a5503514a657e12562a1d6fc2c205079bb19c"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan311-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan311-layout.npy",
+      "source_sha256": "c51ce93dfd57e55e1e06fad937edc291203d7624215ecabc080faf414303117d"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan312-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan312-layout.npy",
+      "source_sha256": "a9734b62e2c50d68ef53b0529e6fb6c16b6bf57ac0a284a6b24dd4a3cb79d1bd"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan313-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan313-layout.npy",
+      "source_sha256": "f92d7e5608acdf775891686029d7079061e6c8e827c8cbf52afdf00063d5dbdd"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan314-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan314-layout.npy",
+      "source_sha256": "3e29bab69a7d8287da47fac0fd405ecc4ea8ac1fd7b83ab09a213ce1adc30480"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan315-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan315-layout.npy",
+      "source_sha256": "026bc7ce156093659dc8dea0cc8222f9982d977ac1e4b92fc2e9e4344b1a6b41"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan316-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan316-layout.npy",
+      "source_sha256": "15cf39ffd11927ae847b6b1c0e5e91393c1356b7af50341c68c0cc312d2fa232"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan317-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan317-layout.npy",
+      "source_sha256": "0b379d846a8bd1fe524b904a194cd24aa1e9c36fa988bbe7e7ed2552b67edc38"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan318-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan318-layout.npy",
+      "source_sha256": "ec672cea1b387761b026598e1b827206a7413ac4a533823d6a9474bd4dfc3ad1"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan319-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan319-layout.npy",
+      "source_sha256": "a7bfadbaa017e8e5c974a2037a668a8db903e872af4bb84d3abed1ddd539af05"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan320-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan320-layout.npy",
+      "source_sha256": "cb4243db34caccbd27e95c0a7c8535bb927c8318b95a736a996862677cc63cc9"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan321-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan321-layout.npy",
+      "source_sha256": "2e5168835249c3a6ad261623bf534f260f9ac69e3a936b310f75b46c13144de7"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan322-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan322-layout.npy",
+      "source_sha256": "fd37bca09b201fbe7836cd5395316e50e4a8e1e8c81b76034ba1c23a0f45cdc0"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan323-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan323-layout.npy",
+      "source_sha256": "6739bafd48dad819c818a236b6cad9de5fffea271cf874859e8b323bd219711b"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan324-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan324-layout.npy",
+      "source_sha256": "1946ec6abe88cf64d932eedee6b7f181eba632915d6f5607d1d7335a5ca376de"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan325-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan325-layout.npy",
+      "source_sha256": "e285ff70f5605941988baf5f7537c643ebd518af5777203db5f5f5da3f62c17f"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan326-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan326-layout.npy",
+      "source_sha256": "8c6939f3a81e332df329ab31da1d3f30a2ab238a6bfe14c413d9c006823f19f4"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan327-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan327-layout.npy",
+      "source_sha256": "a4655034dd4db98d5479356aa3b65a803ce4a21df2e26f4f840022fc467ab5de"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan328-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan328-layout.npy",
+      "source_sha256": "9decf7756132abe9a4f2049cc4fab36c49bd8b7f3305b0b1be4251447069211e"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan329-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan329-layout.npy",
+      "source_sha256": "4e051a32e1cbbb6bfb4778d83be2ea6af49bc721fb3d063dce03872acda5d7c5"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan330-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan330-layout.npy",
+      "source_sha256": "4918aca6d9aa468d59fceda60a499af08a2cbd3545acc74581f6e1ce5510a1d5"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan4-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan4-layout.npy",
+      "source_sha256": "b706e2ebc68b1ae7f4bfeb5f4f0ede075d51063e4f8c05f760a24105d40f99d1"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan401-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan401-layout.npy",
+      "source_sha256": "6d293c1f444e8bdfdf5bd989731fcaa9dcabf062dad0cc63f167090b84ce00f3"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan402-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan402-layout.npy",
+      "source_sha256": "77bf3eb1bdf59162844d66a5c12deb54502cc3c558cd80b9f3d1b15267ff6455"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan403-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan403-layout.npy",
+      "source_sha256": "2e9fd7f567467fd9961314c491dee70a6fb993db00baefc848db366f4782006f"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan404-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan404-layout.npy",
+      "source_sha256": "3d6be5c692991bc38d64689428cb97b884a705d003b27fe8396306a2a936dd1d"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan405-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan405-layout.npy",
+      "source_sha256": "426be067376c1a768f565e8bd27e1d109e755def263c109592380ce889dec6ee"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan406-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan406-layout.npy",
+      "source_sha256": "cc42d6aa539ee363e5b5d47125e11d0a98621f888d7adcb0026aa6fbbed1baa8"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan407-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan407-layout.npy",
+      "source_sha256": "eaf3747f24fcd7e324f843d3b44ac4242868dd5a2b352690ec7de016679842c8"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan408-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan408-layout.npy",
+      "source_sha256": "1eeafadb870c5edfe16ab6ed682dc9e1c1dacac3586024dff957b103a56b2e8d"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan409-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan409-layout.npy",
+      "source_sha256": "d98b95957fd56b435735af874b2ee60b26d8eb4ddd6395cccfbe970343e9615b"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan410-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan410-layout.npy",
+      "source_sha256": "4add4d34a3975039d8dc64351d5ce19533e5b5293fa8e22e0b21d1e470269b9c"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan411-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan411-layout.npy",
+      "source_sha256": "af322155f767843fbbcb55feff6fe66396770e0e1fbb28fdc12a59f1bebc4be1"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan412-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan412-layout.npy",
+      "source_sha256": "8503ab995016e8b1330cb55037dfb8b16134745be238d067d0fa9c0fc47218c7"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan413-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan413-layout.npy",
+      "source_sha256": "17846b1023eebe8c54a42f1cf003f3f87f3e3fd6459252c75172b36c3fed4952"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan414-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan414-layout.npy",
+      "source_sha256": "9fc6216754fdec0e930cb45b5da2e2024e58f781935e2aff0f39549b8c2fc831"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan415-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan415-layout.npy",
+      "source_sha256": "d433212dd693d12bb33fe49a9d57224976556574549c0051eec757beaa17d4b9"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan416-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan416-layout.npy",
+      "source_sha256": "5305e4c920963427522fe33d796486cdf80acab4a4112df6c040a2c2966a91ba"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan417-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan417-layout.npy",
+      "source_sha256": "5832b9c78458eb5b15ed723095e9fc46e8791ee0c1a7f4474bf755342d472ef2"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan418-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan418-layout.npy",
+      "source_sha256": "a9977fde6e73964afe4014c4a48af9f0116454ab1cf8e11f15c452db6a4b4180"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan419-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan419-layout.npy",
+      "source_sha256": "e6e4aea2312089005ad060add06e5acc42682971d1fcc93ecb7aa2ba18e3b25a"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan420-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan420-layout.npy",
+      "source_sha256": "95f83bf3ec113563f55ea8ae75be877a16056ced04574eb9f7c61a56b5434b71"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan421-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan421-layout.npy",
+      "source_sha256": "e05bd95e2d9ba8442de79afc95489d1991f28bba721865f044b4903bc6328404"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan422-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan422-layout.npy",
+      "source_sha256": "75f5c5b774ce63ae769664a1ea34a3dfacfbd396adbb6152074585e2fb7aaad3"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan423-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan423-layout.npy",
+      "source_sha256": "5c5084b6d97638179aa1888e0fdd6158f6a984e07d6a138e7b3dd7cad5ffdec8"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan424-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan424-layout.npy",
+      "source_sha256": "c90fc8afbeb4a0dde2928031227338cbfa49478d4ead11b26b67f8ba9460ab54"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan425-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan425-layout.npy",
+      "source_sha256": "6b28929afad508425f43b5c8ab781e29fbe44edf0bf467d7ed5e83a90494bbfe"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan426-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan426-layout.npy",
+      "source_sha256": "e6e566838a13c0b36fada15fcae7c9da4a2ac4f1a49951c645747ed5518d9163"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan427-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan427-layout.npy",
+      "source_sha256": "2cc1217b0058d98f4f3493f93dad824ac397e71e3816382dd0ded79c036d2614"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan428-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan428-layout.npy",
+      "source_sha256": "b7a0d73d6bd3b5ef7a50de13f64c91c7df0e132f0c0116e0d143e9d9cd5323ac"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan429-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan429-layout.npy",
+      "source_sha256": "8152907a245551c97718b21bbc8b2b838f9770166e992f507957fc16d8e69283"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan430-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan430-layout.npy",
+      "source_sha256": "318e12f6048e4c120a11af9ccc55f8d11f7e8b63cc49df1adb4cae1ff9e85697"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan5-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan5-layout.npy",
+      "source_sha256": "6cf038e11481804aa341a5633b1a14b3b222c002fc68f6a82bc440228450eda2"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan6-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan6-layout.npy",
+      "source_sha256": "b5e01eb6c165777215b79ce39e66607979b15f4396d6a1e6b2098df6fce39759"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan7-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan7-layout.npy",
+      "source_sha256": "d3b83b7d0e0ef49f7fc9875f53b5b77bb8b470d761c995252f8c338a43ad272c"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan8-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan8-layout.npy",
+      "source_sha256": "1033f21710dcc11855d70e4d9348c0265b4327a42e77da5d6299013e23146f4b"
+    },
+    {
+      "source": "eb_alfred/gen/layouts/FloorPlan9-layout.npy",
+      "target": "vaguebench/envs/eb_alfred/gen/layouts/FloorPlan9-layout.npy",
+      "source_sha256": "3f80f0435ffad5cda05f0225647ddb274b5bee6401325e4fc379aed5b00d778c"
+    },
+    {
+      "source": "planner/vlm_planner.py",
+      "target": "vaguebench/planner/vlm_planner.py",
+      "source_sha256": "aec0c7cd3ece1e19d1dd8d19be63e0e4f01709ea80f8ee63f06d81fe5eea3e23"
+    },
+    {
+      "source": "planner/custom_model.py",
+      "target": "vaguebench/planner/custom_model.py",
+      "source_sha256": "859aec10901f212f58bc68e9ba10d5e1ddfbfe46e8fd1447d3af2e2ebea6ca72"
+    },
+    {
+      "source": "planner/planner_utils.py",
+      "target": "vaguebench/planner/planner_utils.py",
+      "source_sha256": "17939735839f7bd74a3a631682ff9b6eab6ad6a46d5453bc98505ed7ffe38996"
+    },
+    {
+      "source": "evaluator/config/alfred_examples.json",
+      "target": "vaguebench/prompts/alfred_examples.json",
+      "source_sha256": "ae932e58f640286c3e4ab2f73b77282e736e2169d38d4879ae0f9e4d9bf2ca5f"
+    }
+  ]
+}
